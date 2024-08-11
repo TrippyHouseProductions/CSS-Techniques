@@ -4,10 +4,10 @@ body {
   scroll-behavior: smooth;
 }
 body {
-  background-color: #cbcbcb;
+  background-color: #757575;
   margin: 0;
   font-size: calc(12px - 0.1vw);
-  color: #2e373a;
+  color: #ffffff;
   font-family: "Libre Baskerville", sans-serif;
 }
 * {
@@ -53,8 +53,16 @@ header img {
 .banner .image {
   width: 100%;
   height: 600px;
-  background-image: url(images/banner.png);
+  /*background-image: url(images/banner.png);*/
   position: relative;
+}
+.background-video {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  z-index: -1;
+  object-fit: cover;
+  pointer-events: none; /* Makes sure the video doesn't interfere with clicking elements in the banner */
 }
 .banner .image img {
   position: absolute;
