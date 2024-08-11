@@ -6,7 +6,7 @@ body {
 body {
   background-color: #cbcbcb;
   margin: 0;
-  font-size: 14px;
+  font-size: calc(12px - 0.1vw);
   color: #2e373a;
   font-family: "Libre Baskerville", sans-serif;
 }
@@ -17,7 +17,8 @@ body {
   list-style: none;
 }
 main {
-  width: min(1280px, 100vw);
+  width: 90%;
+  max-width: 1280px;
   margin: auto;
   padding: 10px;
 }
@@ -27,6 +28,7 @@ header {
   align-items: center;
   flex-wrap: wrap;
 }
+
 header img {
   height: 40px;
 }
@@ -132,7 +134,8 @@ footer {
   min-height: 100vh;
 }
 footer .content {
-  width: min(1280px, 100vw);
+  width: 90%;
+  max-width: 1280px;
   margin: auto;
   padding: 100px 20px;
 }
@@ -199,7 +202,7 @@ footer .content {
     overflow: hidden;
   }
   .grid-1 h2:nth-child(3) {
-    font-size: 3em;
+    font-size: 5em;
   }
   .grid {
     display: block;
